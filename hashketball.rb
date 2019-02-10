@@ -7,7 +7,7 @@ def game_hash
     },
     
     
-    :away => {:team_name
+    :away => {:team_name => 
     :colors
     :players
       
