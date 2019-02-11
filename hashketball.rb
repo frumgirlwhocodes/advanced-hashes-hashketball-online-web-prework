@@ -153,8 +153,8 @@ def team_names
 end 
 end 
 def player_numbers(team)
+  new_array=[]
   game_hash.map do |location, team_data|
-    team_data[:number]
 end 
 end 
 
