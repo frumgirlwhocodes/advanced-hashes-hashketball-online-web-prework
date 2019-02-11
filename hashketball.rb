@@ -154,9 +154,26 @@ end
 end 
 def player_numbers(team)
   new_array=[]
-  game_hash.map do |location, team_data|
-end 
-end 
+ if game_hash[:home][:team_name] == team
+    game_hash[:home][:players].each do |name, stats|
+      stats.each do |stat_label, stat_value|
+        if stat_label == :number
+          new_array << stat_value
+        end
+      end
+    end
+  else 
+    game_hash[:away][:players].each do |name, stats|
+      stats.each do |stat_label, stat_value|
+        if stat_label == :number
+          new_array << stat_value
+        end
+      end
+    end
+  end
+  new_array
+end
+
 
 
 
