@@ -152,5 +152,55 @@ def team_names
   team_data[:team_name]
 end 
 end 
+def player_numbers(name)
+  numbers = []
+  game_hash.each do |team, attributes|
+    if attributes[:team_name] == name
+      attributes.each do |attribute, value|
+        if attribute == :players
+          value.each do |player_name, data|
+            numbers.push(data[:number])
+          end
+        end
+      end
+    end
+  end
+  numbers
+end
 
+
+ def player_stats(player)
+  stats={}
+  game_hash.each do |team, attributes|
+    attributes.each do |attribute, value|
+      if attribute == :players
+      ##  binding.pry
+        stats=value[player] if value.has_key?(player)
+      end
+    end
+  end
+  stats
+end
+
+
+
+ def big_shoe_rebounds
+
+   biggest_shoe=0
+
+   rebounds=0
+  game_hash.each do |team, attributes|
+    attributes.each do |attribute, value|
+      if attribute == :players
+        value.each do |player_name, stats|
+          if biggest_shoe < stats[:shoe]
+            biggest_shoe = stats[:shoe]
+            rebounds = stats[:rebounds]
+          end
+        end
+      end
+    end
+  end
+  rebounds
+end
 
