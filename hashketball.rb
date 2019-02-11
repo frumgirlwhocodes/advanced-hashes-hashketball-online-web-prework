@@ -24,8 +24,8 @@ def game_hash
         
       },
         "Brook Lopez" =>{
-      :number= => 30,
-      :shoe => 14,
+      :number= => 11,
+      :shoe => 17,
       :points => 
       :rebounds => 
       :assists =>
