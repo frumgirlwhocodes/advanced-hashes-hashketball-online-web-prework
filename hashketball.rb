@@ -11,7 +11,16 @@ def game_hash
       :assists =>
       :steals => 
       :blocks =>
-      :slam_dunks => 
+      :slam_dunks => },
+      "Reggie Evans" => {
+      :number= => 0,
+      :shoe => 16,
+      :points => 
+      :rebounds => 
+      :assists =>
+      :steals => 
+      :blocks =>
+      :slam_dunks =>
       
       
     },
