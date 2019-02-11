@@ -125,7 +125,7 @@ def num_points_scored(player)
   game_hash.each do |team, status|
     status[:players].each do |status, value| 
       if status==player 
- 
+ return status[:points]
 end 
 
     
