@@ -6,12 +6,15 @@ def game_hash
       :players => {"Alan Anderson" =>{
       :number= => 0,
       :shoe => 16,
-      :points => 
-      :rebounds => 
-      :assists =>
-      :steals => 
-      :blocks =>
-      :slam_dunks => },
+      :points => 22,
+      :rebounds => 12,
+      :assists => 12,
+      :steals => 3,
+      :blocks => 1,
+      :slam_dunks => 1 
+        
+      },
+    
       "Reggie Evans" => {
       :number= => 30,
       :shoe => 14,
@@ -54,17 +57,10 @@ def game_hash
       :blocks =>
       :slam_dunks =>
         
-        
-        
       }
       }
     },
-      
-      
-      
-    },
-    
-    
+  
     :away => {:team_name => "Charlotte Hornets",
     :colors => ["Turquoise", "Purple"], 
     :players
