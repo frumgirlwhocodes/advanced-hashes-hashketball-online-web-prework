@@ -34,6 +34,19 @@ def game_hash
       :slam_dunks =>
         
       },
+      "Mason Plumlee" =>{ 
+      :number= => 30,
+      :shoe => 14,
+      :points => 
+      :rebounds => 
+      :assists =>
+      :steals => 
+      :blocks =>
+      :slam_dunks =>
+        
+      },
+      "Jason Terry" => 
+      
       
       
     },
