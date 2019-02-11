@@ -154,35 +154,6 @@ end
 end 
 
 
-def player_numbers(team)
-  def player_numbers(team)
-  numbers = []
-  game_hash.each do |side, team_hash|
-    if team_hash[:team_name] == team 
-      team_hash[:players].map do |player, pl_hash|
-        numbers.push(pl_hash[:number])
-      end
-    end
-  end
-  numbers
-end
-
-
- def player_stats(name)
-  all_players[name]
-end
-
-
- def big_shoe_rebounds
-  shoes = {}
-  all_players.each do |player, stats|
-    shoes[player] = stats.fetch(:shoe)
-  end
-  big_shoe = shoes.sort_by { |player, shoe_size| shoe_size }[-1][0]
-  all_players.fetch(big_shoe).fetch(:rebounds)
-end 
-end 
-
 
 
 
