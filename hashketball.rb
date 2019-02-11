@@ -131,7 +131,7 @@ def num_points_scored(player)
   end
 end
 end 
-num_points_scored("Ben Gorden")
+num_points_scored()
     
 
 
