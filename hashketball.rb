@@ -152,7 +152,21 @@ def team_names
   team_data[:team_name]
 end 
 end 
-
+def player_numbers(name)
+  numbers = []
+  game_hash.each do |team, attributes|
+    if attributes[:team_name] == name
+      attributes.each do |attribute, value|
+        if attribute == :players
+          value.each do |player_name, data|
+            numbers.push(data[:number])
+          end
+        end
+      end
+    end
+  end
+  numbers
+end
 
 
 
