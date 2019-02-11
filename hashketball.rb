@@ -152,7 +152,8 @@ def team_names
   team_data[:team_name]
 end 
 end 
-def player_numbers(team_name)
+def player_numbers(team)
+  game_hash.each 
 
 
 
