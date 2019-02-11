@@ -121,7 +121,7 @@ def game_hash
     }
   }
 end
-def both_players
+def both_players(name)
   game_hash[:home][:players].merge[:away][:players]
 binding.pry 
 end 
