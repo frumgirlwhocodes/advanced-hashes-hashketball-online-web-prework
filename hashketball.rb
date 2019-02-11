@@ -152,7 +152,26 @@ def team_names
   team_data[:team_name]
 end 
 end 
+def player_numbers(team_name)
+  player_number_array = []
+  game_hash.each do |location, team_data|
+    if team_data[:team_name] == team_name
+      team_data[:players].each do |player_name, data|
+        player_number_array << data[:number]
+      end
+    end
+  end
+  player_number_array
+end
 
+
+ def player_stats(player_name)
+  game_hash.each do |location, team_data|
+    if team_data[:players].has_key?(player_name)
+      return team_data[:players][player_name]
+    end
+  end
+end
 
  def big_shoe_rebounds
 
