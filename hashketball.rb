@@ -121,10 +121,11 @@ def game_hash
     }
   }
 end
-
+def both_players
+  game_hash[:home][:players].merge[:away][:players]
+binding.pry 
 def num_points_scored(name)
-  game_hash.each do |team,stats|
-    game_hash[:player]
+  game_hash
     
 
 
